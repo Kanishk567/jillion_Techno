@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-py-28">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jillion Technologies</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- npx tailwindcss -i ./style.css -o ./output.css --watch -->
+    
+</head>
+<body class="font-sans">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 w-full bg-white ">
+        <section id="mob" class=" container mx-auto px-2 ">
+            <!-- lg:hidden  -->
+            <nav class="block  lg:hidden ">            
+                <div id="lowernav" class="flex items-center h-16 justify-between px-3   bg-white  ">
+                    <h1 class="logo font-bold text-xl  text-violet-800  mr-6 "> <a href="index.html">Jillion Technologies</a></h1>
+                    <div class="flex space-x-6">
+                        
+                        <a href="#"><button id="hamburger" onclick="handleMenu()">
+                            <i class="fa-solid fa-bars text-gray-700"></i></button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NavToggle Section -->
+                <div id="nav-dialog" class=" hidden fixed  bg-white inset-0 p-3">
+                    <nav id="insidemenu" class="flex justify-between">
+                        <h1 class="logo font-bold text-2xl  text-violet-800  mr-6 "><a href="index.html">Jillion Technologies</a></h1>
+                            <a href="#"><button id="hamburger" onclick="handleMenu()">
+                                <i class="fa-solid fa-xmark text-gray-700"></i></button>
+                            </a>
+                    </nav>
+                    <div id="lowerINav" class="space-y-6 mt-6 px-4 ">
+                        <a href="#home" onclick="handleMenu()"  class="text-gray-600 block   hover:bg-gray-100 hover:rounded-md  hover:text-violet-600 ">Home</a>
+                        <a href="#features" onclick="handleMenu()"  class="text-gray-600 block   hover:bg-gray-100 hover:rounded-md hover:text-violet-600 ">Features</a>
+                        <a href="#products" onclick="handleMenu()"  class="text-gray-600  block  hover:bg-gray-100 hover:rounded-md   hover:text-violet-600 ">Products</a>
+                        <a href="#testimonials" onclick="handleMenu()"  class="text-gray-600  block  hover:bg-gray-100 hover:rounded-md   hover:text-violet-600 ">Testimonials</a>
+                        <a href="#contact" onclick="handleMenu()"  class="text-gray-600  block  hover:bg-gray-100 hover:rounded-md   hover:text-violet-600 ">Contact Us</a>
+
+                    </div>
+
+                </div>
+            </nav>
+
+        </section>
+        
+        <!-- Desktop Navbar -->
+        
+        <section id="desktop" class=" hidden container mx-auto  py-10 lg:block ">
+
+            <nav class="flex items-center justify-between  bg-white pl-2 max-h-20">
+                <h1 class="logo font-bold text-2xl text-violet-800  "><a href="index.html">Jillion Technologies</a></h1>
+                
+                <a href="#home" class="font-semibold text-violet-800   hover:underline  hover:text-violet-600 hover:underline-offset-8  active:underline  active:text-violet-600 active:underline-offset-8">Home</a>
+                <a href="#features" class="font-semibold text-violet-800   hover:underline  hover:text-violet-600 hover:underline-offset-8  active:underline  active:text-violet-600 active:underline-offset-8">Features</a>
+                <a href="#products" class="font-semibold text-violet-800   hover:underline  hover:text-violet-600 hover:underline-offset-8  active:underline  active:text-violet-600 active:underline-offset-8">Products</a>
+                <a href="#testimonials" class="font-semibold text-violet-800   hover:underline  hover:text-violet-600 hover:underline-offset-8  active:underline  active:text-violet-600 active:underline-offset-8">Testimonials</a>
+                <a href="#contact" class="font-semibold text-violet-800   hover:underline  hover:text-violet-600 hover:underline-offset-8  active:underline  active:text-violet-600 active:underline-offset-8">Contact Us</a>
+                
+            </nav>
+
+        </section>
+
+    </header>
+
+    <main>
+<!-- Hero Section -->
+        <section id="home" class="container mx-auto px-6 text-center py-16  mb-56 md:-mb-20 bg-white h-screen">
+            <div class="flex flex-col md:flex-row">
+                <div id="headingpara" class=" md:w-1/2 text-start mb-2">
+                    <h2 class="text-4xl font-bold text-violet-800 mb-4">WE MAKE YOUR IDEA'S <span class="text-orange-500">INTO REALITY</span></h2>
+                    <p class="text-gray-600 mb-6">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example txt to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="space-x-4">
+                        <button class="bg-violet-600 text-white px-4 py-2 rounded hover:bg-violet-700"><a href="index.html">Get Started</a></button>
+                        <button class="border border-violet-600 text-violet-600 px-4 py-2 rounded hover:bg-violet-600 hover:text-white"><a href="#contact">Contact Us</a></button>
+                    </div>
+                </div>
+                <img src="img/hero.jpg" alt="heroimg" class="object-contain h-[70vh] ">
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="container mx-auto px-6 my-20 bg-gray-50">
+            <h3 class="text-center text-3xl font-semibold mb-10  text-blue-800">Features</h3>
+                <div class="grid grid-cols-1 gap-y-28">
+                <!-- Card 1 -->
+                    <div class="flex flex-col items-start space-x-4 sm:flex-row">
+                        <img src="img/featureimg.jpg" alt="Feature 1" class="w-80 h-72">
+                        <div>
+                            <h4 class="text-xl font-bold">Card Title</h4>
+                            <p class="text-gray-600">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="flex flex-col items-start space-x-4 sm:flex-row">
+                        <img src="img/featureimg2.jpg" alt="Feature 2" class=" w-80 h-72 order-2">
+                        <div class="order-1">
+                            <h4 class="text-xl font-bold">Card Title</h4>
+                            <p class="text-gray-600">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start space-x-4 sm:flex-row">
+                        <img src="img/featureimg.jpg" alt="Feature 3" class="w-80 h-72">
+                        <div>
+                            <h4 class="text-xl font-bold">Card Title</h4>
+                            <p class="text-gray-600">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+
+                </div> 
+        </section>
+
+        <!-- Product Sections -->
+        <section id="products" class="container mx-auto px-6 py-16 bg-gray-50">
+            
+                <h3 class="text-3xl font-semibold text-center text-blue-800 mb-10">Products</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Product Card -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h4 class="text-lg font-bold mb-2">Card Title</h4>
+                        <p class="text-gray-600">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h4 class="text-lg font-bold mb-2">Card Title</h4>
+                        <p class="text-gray-600">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h4 class="text-lg font-bold mb-2">Card Title</h4>
+                        <p class="text-gray-600">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            
+        </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-semibold text-center text-blue-800 mb-10">TESTIMONIALS</h3>
+
+            <!-- Carousel Container -->
+            <div class="relative">
+                <!-- Carousel Slides -->
+                <div class="flex space-x-4 overflow-hidden  snap-x snap-mandatory ">
+                    <!-- Testimonial Slide 1 -->
+                    <div id="test1" class="min-w-full  bg-gray-100 p-6 rounded-lg shadow snap-center">
+                        <div class="flex justify-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Paula Wilson" class="rounded-full w-20 h-20">
+                        </div>
+                        <blockquote class="text-gray-600 italic mb-4 text-center">
+                            "Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt."
+                        </blockquote>
+                        <p class="text-center font-bold text-blue-800">PAULA WILSON</p>
+                        <p class="text-center text-gray-500">Media Analyst</p>
+                    </div>
+
+                    <!-- Testimonial Slide 2 -->
+                    <div id="test2" class="min-w-full bg-gray-100 p-6 rounded-lg shadow snap-center">
+                        <div class="flex justify-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe" class="rounded-full w-20 h-20">
+                        </div>
+                        <blockquote class="text-gray-600 italic mb-4 text-center">
+                            "Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus et, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum."
+                        </blockquote>
+                        <p class="text-center font-bold text-blue-800">JOHN DOE</p>
+                        <p class="text-center text-gray-500">Project Manager</p>
+                    </div>
+
+                    <!-- Testimonial Slide 3 -->
+                    <div id="test3" class="min-w-full bg-gray-100 p-6 rounded-lg shadow snap-center">
+                        <div class="flex justify-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="Sara Lee" class="rounded-full w-20 h-20">
+                        </div>
+                        <blockquote class="text-gray-600 italic mb-4 text-center">
+                            "Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus et, tincidunt fringilla massa."
+                        </blockquote>
+                        <p class="text-center font-bold text-blue-800">SARA LEE</p>
+                        <p class="text-center text-gray-500">Business Analyst</p>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <div class="absolute inset-x-0 bottom-0 flex justify-center space-x-3 mt-6">
+                    <a  href="#test1" class="dots w-3 h-3 bg-blue-800 rounded-full "></a>
+                    <a  href="#test2" class="dots w-3 h-3 bg-gray-300 rounded-full"></a>
+                    <a  href="#test3" class="dots w-3 h-3 bg-gray-300 rounded-full"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold text-center text-blue-800 mb-10">Contact Us</h2>
+
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <!-- Image Section -->
+                <div class="w-full lg:w-1/2 flex justify-center mb-10 lg:mb-0">
+                    <img src="img/contactimg.jpg" alt="Contactimg" class="w-3/4 lg:w-1/2">
+                </div>
+
+                <!-- Form Section -->
+                <div class="w-full lg:w-1/2">
+                    <form class="bg-gray-100 shadow-md rounded-lg px-8 pt-6 pb-8 mb-4">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                                Name
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                                Email address
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+                                Example textarea
+                            </label>
+                            <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="5" placeholder="Enter your message"></textarea>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer class="bg-gradient-to-r from-purple-600 to-blue-500 text-white py-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col justify-between gap-x-2 lg:flex-row">
+            <!-- Contact Us Column -->
+            
+            <div>
+                <h3 class="font-bold mb-4">CONTACT US</h3>
+                <ul>
+                    <li class="mb-2">
+                        <a href="contact@JILLIONTECHNOLOGIES.com" class="hover:underline">contact@JILLIONTECHNOLOGIES.com</a>
+                    </li>
+                    <li class="mb-2">Phone: 123456789</li>
+                    <li class="mb-2">Address: C-260, Sector-63, Noida, UP-201301</li>
+                </ul>
+            </div>
+
+            <!-- Company Column -->
+            <div>
+                <h3 class="font-bold mb-4">COMPANY</h3>
+                <ul>
+                    <li class="mb-2"><a href="#" class="hover:underline">About Us</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline">Services</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline">Portfolio</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline">Career</a></li>
+                </ul>
+            </div>
+
+            <!-- Service Column -->
+            <div>
+                <h3 class="font-bold mb-4">SERVICE</h3>
+                <ul>
+                    <li class="mb-2"><a href="#" class="hover:underline">Website Development</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline">Mobile App Development</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline">E-commerce Development</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline">Custom Software Development</a></li>
+                </ul>
+            </div>
+
+            <!-- Support Column -->
+            <div>
+                <h3 class="font-bold mb-4">SUPPORT</h3>
+                <ul>
+                    <li class="mb-2"><a href="#contact" class="hover:underline">Contact</a></li>
+                    <li class="mb-2"><a href="#" class="hover:underline">Term & Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
